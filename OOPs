@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+class clock
+{
+             int hr, min, sec;
+              public: void time1()
+            {  
+              cout<<"Enter the following: \n";
+              cout<<"Hours:\n";
+              cin>>hr;
+              cout<<"Mintues:\n";
+              cin>>min;
+              cout<<"Seonds:\n";
+              cin>>sec;
+              
+              cout<<"--------------------------------------- \n";
+              cout<<"TIME: "<<hr<<":"<<min<<":"<<sec;
+              
+              cout<<"---------------------------------------";
+              
+            }
+              public:void time2()
+              {
+              int hours=hr*3600;
+              int mint=min*60;
+              int sum=hours+mint+sec;
+              
+             cout<<"Time in total seconds: "<<sum;
+              
+              
+              }
+              
+    
+};
+
+int main() 
+{
+    clock ob;
+    ob.time1();
+    ob.time2();
+    
+    return 0;
+}
